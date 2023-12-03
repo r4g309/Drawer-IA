@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quick, Draw! Webapp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div>
+    <nav class="header">
+      <span>Adivina el garabato</span>
+    </nav>
+
+    <div class="container">
+      <div class="">
+        <main></main>
+
+      </div>
+      <div class="">
+        <div class="">
+          <button class="" id="predict" type="button">
+            Predecir
+          </button>
+          <button class="" id="clear">Limpiar</button>
+        </div>
+        <canvas id="predictions" role="img" aria-label="Las 3 mejores predicciones" height="500" width="500"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.8/dist/tf-tflite.min.js"></script>
+
+  <script src="./libs/p5.min.js"></script>
+  <script src="./libs/chart.min.js"></script>
+
+  <script src="./scripts/labels.js"></script>
+  <script src="./scripts/sketch.js"></script>
+</body>
+
+</html>
